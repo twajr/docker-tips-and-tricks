@@ -6,8 +6,9 @@ Launching and attaching
 
 ```
 docker run -dit [image]
-docker exec -it [image-id-or-name] bash
-docker run -dit -p 8080:8080 apache2-test
+docker exec -it [image-id-or-name] [command]
+docker run -dit -p 8080:8080 --name apache apache2-test
+docker exec -it apache bash
 ```
 
 ## Docker Cleanup
