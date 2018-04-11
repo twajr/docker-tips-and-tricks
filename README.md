@@ -16,3 +16,10 @@ docker exec -it apache bash
 docker container prune
 docker system prune
 ```
+
+## Docker Security
+You can specify the user to run-as when launching docker
+```
+docker exec -it --user root {image} sh
+docker exec -it --user 1000 {image} bash
+
