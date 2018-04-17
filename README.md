@@ -17,7 +17,7 @@ docker container prune
 docker system prune
 ```
 
-## Docker Security
+## Docker Security / Privileges
 You can specify the user to run-as when launching docker
 ```
 docker exec -it --user root {image} sh
