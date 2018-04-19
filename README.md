@@ -20,7 +20,7 @@ To run the container in privileged mode (to say enable mounting):
 docker run -dit --privileged [image] bash
 ```
 ## Dockerfile Items
-### CMD versus ENTRYPOINT
+### ENTRYPOINT versus CMD  
 An ENTRYPOINT specifies a command what will ALWAYS run when the container starts. 
 The CMD basically provides an optional command passed to the 'entry point', but can be overridden. 
 ```
