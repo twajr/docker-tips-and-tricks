@@ -12,12 +12,12 @@ docker exec -it apache bash
 ## Docker Security / Privileges
 You can specify the user to run-as when launching docker
 ```
-docker exec -it --user root {image} sh
-docker exec -it --user 1000 {image} bash
+docker exec -it --user root [image] sh
+docker exec -it --user 1000 [image] bash
 ```
 To run the container in privileged mode (to say enable mounting):
 ```
-docker run -dit --privileged {image} bash
+docker run -dit --privileged [image] bash
 ```
 ## Dockefile Items
 ### CMD versus ENTRYPOINT
