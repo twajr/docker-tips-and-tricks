@@ -18,7 +18,7 @@ FROM ubuntu:16.04
 ENTRYPOINT ["/bin/ping"]
 CMD ["localhost"]
 ```
-A docker run on the above without parameters will ping the localhost. 
+A docker run on the above without parameters will ping the localhost. However, you can also pass in another hostname and it will overlay localhost. 
 ```
 FROM ubuntu:16.04
 CMD ["/bin/ping", "localhost"]
