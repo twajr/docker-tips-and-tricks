@@ -35,7 +35,7 @@ CMD ["/bin/ping", "localhost"]
 ```
 This will do the same as above, but you can overide the whole CMD with, say bash with:
 ```
-$docker run -it image bash
+$docker run -it image /bin/bash
 ```
 ## Docker Cleanup
 ```
